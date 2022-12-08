@@ -1,0 +1,87 @@
+
+html{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url("img/bamboo.jpg");
+    background-size:auto;
+}
+
+#header{
+    font-size: 75px;
+    font-family: Title;
+    text-align: center;
+    color:rgb(183, 255, 0);
+    user-select: none;
+    -webkit-text-stroke: 3px #000000;
+    margin-top:20px;
+}
+
+@font-face {
+    font-family: Title;
+    src: url(Fonts/kamikaze.regular.ttf);
+}
+
+@font-face {
+    font-family: Timer;
+    src: url(Fonts/electroharmonix.ttf);
+}
+
+#main{
+    position:relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+    margin-top:20px;
+    display:block;
+    width:1000px;
+    
+}
+#second{
+    position:absolute;
+    display:flex;
+    width:100%;
+    align-items: center;
+    padding:20px;
+}
+
+#phealth{
+    height:30px;
+    width:100%;
+    background-color: red;
+}
+#timer{
+    background-color:black;
+    width:70px;
+    height:50px;
+    flex-shrink:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:35px;
+    font-family: Timer;
+    color:white;
+    border:4px solid white;
+}
+#ehealth{
+    height:30px;
+    background-color: red;
+}
+#rezultat{
+    position:absolute;
+    color: rgb(255, 0, 251);
+    font-size:80px;
+    font-family: Timer;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display:none;
+}
